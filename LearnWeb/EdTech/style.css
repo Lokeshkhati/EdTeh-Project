@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+}
+
+#header{
+    background: url(Images/Header.png);
+    background-position: center;
+    background-size: cover;
+    height:148vh;
+}
+.container h1{
+    color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 640px;
+    font-family: monospace;
+    font-size: 30px;
+}
+.container h3{
+    display: flex;
+    align-items: center;
+    justify-content: last baseline;
+    font-family: monospace;
+    font-size: 28px;
+    margin-left: 460px;
+    color: rgba(0, 0, 0, 0.877);
+
+}
+.logo{
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250PX;
+    top: 0;
+    background:  rgb(245, 97, 127);
+    z-index: 2;
+    transition: .5s;
+    
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuBtn{
+    width: 50px;
+    right: 65px;
+    top:35px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 2;
+}
+.btn  {
+    padding: 12px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 620px;
+    cursor: pointer;
+    background: rgb(238, 74, 107);
+    outline: none;
+    border: 2px ;
+    border-radius: 5px;
+    font-size: larger;
+    transition: 0.5s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background: crimson ;
+    color: black;
+}
+#about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-left-col img{
+    border-bottom-right-radius: 10px;
+    width: 100%;
+}
+.about-right-col{
+    flex-basis: 50%;
+    text-align: center;  
+}
+.about-right-col h1{
+    padding-bottom: 50px;
+    color: crimson;
+    font-family: monospace;
+    font-size: 30px;
+}
+.about-right-col p{
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.about-btn{
+    margin-left: 960px;
+    margin-top: -100px;
+    
+}
+#featurs{
+    height: 100vh;
+    margin: 40px;
+    padding: 50px; 
+}
+.feature-row{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 160px ;
+    margin-left: 110px;
+    margin-bottom: 50px;
+}
+.feature-col{
+    height: 200px;
+    margin-left: 45px;
+    box-shadow:10px 10px 10px 10px rgba(0, 0, 0,0.1);
+    flex-basis: 25%;
+    text-align: center; 
+    border-radius: 5px;
+    transition: 1s;
+}
+.feature-col:hover{
+    transform: scale(1.3);
+}
+
+.feature-col img{
+    width: 100px;
+}
+.feature-col h4{
+    margin-bottom:15px ;
+    font-size: 20px;
+    font-weight: 400;
+}  
+.feature-btn{
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+#price-card{
+    height: 110vh;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    background: rgb(241, 239, 239);
+}
+.box-1, .box-2, .box-3{
+    width: 320px;
+    height: 530px;
+    margin-left: 45px;
+    box-shadow:10px 10px 10px 10px rgba(0, 0, 0,0.1);
+    transition: 1s;
+    border-radius: 20px;
+    transform: translateY(1.5em);
+    transition: 0.5s;
+    background: white;
+    margin-top: 50px;
+}
+.box-1:hover{
+    transform: translateY(0);
+}
+.box-2:hover{
+    transform: translateY(0);
+}
+.box-3:hover{
+    transform: translateY(0);
+}
+
+.head-part{
+    height: 120px;
+    background:rgb(245, 54, 92);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.head-part h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: #fff;
+    font-family: monospace;
+    font-size: 22px;
+}
+
+.head-part p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-family: monospace;
+        font-size: 18px;
+    }
+    .main{
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+    .main p{
+        display: inline-block;
+        padding: 10px;  
+        font-size: 17px;
+    }
+    .main span{
+        color: rgb(218, 39, 84);
+        font-weight: bold;
+    }
+    .price-card-body{
+        padding: 25px;
+        
+    }
+    .price-card-body p{
+          padding: 10px;
+    }
+    .plan-cost{
+        font-size: 28px;
+    }
+    .plan-cost ,.plan-text {
+        display: flex;
+        justify-content: center;
+    }
+    .purchase-btn{
+        text-decoration: none;
+        color: crimson;
+        padding :7px 20px;
+        border:1px soild;
+        border-color: crimson;
+        border-radius: 50px;
+        font-size: 17px;
+        outline: none;
+        cursor: pointer;
+        background: transparent;
+        text-transform: uppercase;
+        margin: 10px auto;
+        display: block;
+    }
+    .purchase-btn:hover{
+        background: crimson;
+        color: #fff;
+    }
+     .plan-text{
+         color: rgb(136, 135, 133);
+         font-size: 14px;
+     }
+
+     /*-------------------CONTACT*-------------------*/
+     
+     #contact{
+         height: 130vh;
+         background: rgb(241, 239, 239); 
+     }
+     .contact-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .contact-right-col img{
+         margin-top: 50px;
+         margin-left: 10px;
+         width: 700px;
+     }
+     .contact-box{
+        background: #fff;
+        margin: 50px;
+        width: 450px;
+        height: 620px;
+        box-shadow:10px 10px 10px 10px rgba(0, 0, 0,0.005);
+        border-radius: 15px;
+     }
+     .icon{
+         display: flex;
+         justify-content: center;  
+     }
+     .icon img{
+         width: 50px;
+         padding: 15px;
+         cursor: pointer;
+         margin-top: 20px;
+     }
+     .contact-box h2{
+        color: rgb(250, 43, 95) ;
+        display: flex;
+        justify-content: center;  
+     }
+     .contact-box p{
+         text-align: center;
+         margin-top: 15px;
+         color: darkgrey;
+         font-size: 14px;  
+     }
+     .lines{
+         color: darkgrey;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     .line{
+         position: relative;
+         width: 100%;
+         height: 2px;
+         background: rgb(192, 188, 188);
+     }
+     .or{
+         margin: 5px;
+     }
+     .input-values{
+         padding: 20px;
+     }
+     .input-values input{
+         padding: 10px;
+         width: 80%;
+         margin: 10px;
+         
+         outline-color: rgb(165, 151, 151);
+         border: 2px solid rgb(192, 188, 188);
+         border-radius: 5px;
+     }
+     input::placeholder{
+         color: rgb(212, 207, 207);
+         font-size: 20px;
+     }
+     .checkbox{
+         margin-left: 28px;
+         padding: 15px;
+     }
+     .check-text{
+         color: rgb(141, 138, 138);
+         font-size: 18px;
+     }
+     .check-text a{
+         text-decoration: none;
+         color:  rgb(250, 43, 95) ;
+     }
+     .contact-btn{
+         margin-top: 30px;
+         margin-left: 120px;
+         padding: 10px;
+         width: 160px;
+         border: 2px solid  rgb(218, 39, 84);
+         background:   rgb(250, 43, 95);
+         color: #fff;
+         outline: none;
+         cursor: pointer;
+         border-radius: 50px;
+         font-size: 20px;
+         outline-color: rgb(226, 224, 216);
+     }
+     .contact-btn:hover{
+        background:  rgb(218, 40, 84)  ;
+     }
+     
+     .p-text p{
+         font-size: 18px;
+     }
+     .p-text a{
+         font-size: 24px;
+         text-decoration: none;
+         color: rgb(250, 43, 95);
+     }
+     
+     /*--------------------------------Footer--------------------------*/
+
+     .footer{
+         height: 45vh;
+         background: rgb(209, 212, 212);
+     }
+     .love-icon{
+         display: flex;
+         justify-content: center;
+     }
+     .love-icon span{
+        margin-top:50px ;  
+        font-size: 17px;
+        font-family: monospace;
+     }
+     .love-icon small{
+         font-size: 20px;
+         font-family: monospace;
+     }      
+.heart {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+  }
+  .copyright-content{
+      height: 4vh;
+      background: rgb(151, 146, 146);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .footer-row{
+      margin-left: 190px;
+      margin-right:190px;
+      display: flex;
+      justify-content: space-between;  
+  }
+   .footer-col h3{
+   margin-top: 30px;
+   margin-bottom: 10px;
+   color: rgb(233, 57, 71);
+   text-align: center;
+   }
+   .footer-col p{
+    padding:6px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+   }
